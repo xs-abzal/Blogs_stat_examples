@@ -1,0 +1,20 @@
+digraph Tree {
+node [shape=box, style="filled", color="black"] ;
+graph [ranksep=equally, splines=polyline] ;
+0 [label="node #0\nskewness_wt <= 5.161\ngini = 0.491\nsamples = 621\nvalue = [543, 417]", fillcolor="#f9e2d1"] ;
+1 [label="node #1\nentropy_image <= -0.446\ngini = 0.476\nsamples = 421\nvalue = [250, 389]", fillcolor="#b8dcf6"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="node #2\ngini = 0.285\nsamples = 167\nvalue = [45, 217]", fillcolor="#62b1ea"] ;
+1 -> 2 ;
+3 [label="node #3\ngini = 0.496\nsamples = 254\nvalue = [205, 172]", fillcolor="#fbebdf"] ;
+1 -> 3 ;
+4 [label="node #4\nvariance_wt <= -4.326\ngini = 0.159\nsamples = 200\nvalue = [293, 28]", fillcolor="#e78d4c"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label="node #5\ngini = 0.0\nsamples = 15\nvalue = [0, 28]", fillcolor="#399de5"] ;
+4 -> 5 ;
+6 [label="node #6\ngini = 0.0\nsamples = 185\nvalue = [293, 0]", fillcolor="#e58139"] ;
+4 -> 6 ;
+{rank=same ; 0} ;
+{rank=same ; 1; 4} ;
+{rank=same ; 2; 3; 5; 6} ;
+}
