@@ -1,20 +1,11 @@
 digraph Tree {
 node [shape=box, style="filled", color="black"] ;
 graph [ranksep=equally, splines=polyline] ;
-0 [label="node #0\nvariance_wt <= -0.279\ngini = 0.488\nsamples = 618\nvalue = [554, 406]", fillcolor="#f8ddca"] ;
-1 [label="node #1\nskewness_wt <= 7.695\ngini = 0.265\nsamples = 252\nvalue = [64, 343]", fillcolor="#5eafea"] ;
+0 [label="node #0\nvariance_wt <= 0.32\ngini = 0.494\nsamples = 960\nvalue = [0.555, 0.445]", fillcolor="#fae6d8"] ;
+1 [label="node #1\ngini = 0.301\nsamples = 465\nvalue = [0.09, 0.395]", fillcolor="#66b3eb"] ;
 0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
-2 [label="node #2\ngini = 0.094\nsamples = 216\nvalue = [17, 327]", fillcolor="#43a2e6"] ;
-1 -> 2 ;
-3 [label="node #3\ngini = 0.379\nsamples = 36\nvalue = [47, 16]", fillcolor="#eeac7c"] ;
-1 -> 3 ;
-4 [label="node #4\nvariance_wt <= 1.565\ngini = 0.202\nsamples = 366\nvalue = [490, 63]", fillcolor="#e89152"] ;
-0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
-5 [label="node #5\ngini = 0.413\nsamples = 128\nvalue = [136, 56]", fillcolor="#f0b58b"] ;
-4 -> 5 ;
-6 [label="node #6\ngini = 0.038\nsamples = 238\nvalue = [354, 7]", fillcolor="#e6833d"] ;
-4 -> 6 ;
+2 [label="node #2\ngini = 0.175\nsamples = 495\nvalue = [0.466, 0.05]", fillcolor="#e88f4e"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
 {rank=same ; 0} ;
-{rank=same ; 1; 4} ;
-{rank=same ; 2; 3; 5; 6} ;
+{rank=same ; 1; 2} ;
 }
