@@ -1,18 +1,18 @@
 digraph Tree {
 node [shape=box, style="filled", color="black"] ;
 graph [ranksep=equally, splines=polyline] ;
-0 [label="node #0\ncurtosis_wt <= 0.19\nmse = 0.003\nsamples = 960\nvalue = -0.0", fillcolor="#f3c6a6"] ;
-1 [label="node #1\nskewness_wt <= 2.103\nmse = 0.002\nsamples = 430\nvalue = 0.007", fillcolor="#f3c6a5"] ;
+0 [label="node #0\nyear <= 2018.5\nmse = 19627496.4\nsamples = 99\nvalue = -0.0", fillcolor="#f1bd97"] ;
+1 [label="node #1\nmileage <= 41803.5\nmse = 4831552.815\nsamples = 49\nvalue = -3756.402", fillcolor="#fae5d7"] ;
 0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
-2 [label="node #2\nmse = 0.003\nsamples = 87\nvalue = 0.991", fillcolor="#e58139"] ;
+2 [label="node #2\nmse = 2257263.269\nsamples = 35\nvalue = -2809.006", fillcolor="#f8dbc7"] ;
 1 -> 2 ;
-3 [label="node #3\nmse = 0.001\nsamples = 343\nvalue = -0.038", fillcolor="#f4c9aa"] ;
+3 [label="node #3\nmse = 3413635.204\nsamples = 14\nvalue = -6124.892", fillcolor="#ffffff"] ;
 1 -> 3 ;
-4 [label="node #4\nskewness_wt <= -0.777\nmse = 0.003\nsamples = 530\nvalue = -0.006", fillcolor="#f3c7a7"] ;
+4 [label="node #4\nmileage <= 10479.5\nmse = 6747398.586\nsamples = 50\nvalue = 3681.274", fillcolor="#e99558"] ;
 0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
-5 [label="node #5\nmse = 0.003\nsamples = 263\nvalue = 0.433", fillcolor="#eda876"] ;
+5 [label="node #5\nmse = 4072955.155\nsamples = 26\nvalue = 5498.202", fillcolor="#e58139"] ;
 4 -> 5 ;
-6 [label="node #6\nmse = 0.003\nsamples = 267\nvalue = -0.808", fillcolor="#ffffff"] ;
+6 [label="node #6\nmse = 2194028.082\nsamples = 24\nvalue = 1712.936", fillcolor="#edaa79"] ;
 4 -> 6 ;
 {rank=same ; 0} ;
 {rank=same ; 1; 4} ;
